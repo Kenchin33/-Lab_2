@@ -1,8 +1,8 @@
-package service;
+package com.example.animereviewapi.service;
 
-import model.Review;
-import model.Anime;
-import model.User;
+import com.example.animereviewapi.model.Review;
+import com.example.animereviewapi.model.Anime;
+import com.example.animereviewapi.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

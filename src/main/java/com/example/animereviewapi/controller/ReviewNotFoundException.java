@@ -1,4 +1,4 @@
-package controller;
+package com.example.animereviewapi.controller;
 
 public class ReviewNotFoundException extends RuntimeException {
     

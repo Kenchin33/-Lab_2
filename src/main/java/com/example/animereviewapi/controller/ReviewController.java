@@ -1,7 +1,7 @@
-package controller;
+package com.example.animereviewapi.controller;
 
-import model.Review;
-import service.ReviewService;
+import com.example.animereviewapi.model.Review;
+import com.example.animereviewapi.service.ReviewService;
 
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
@@ -38,7 +38,7 @@ public class ReviewController {
     // Отримати рецензію по ID
     @GetMapping("/{reviewId}")
     public Review getReviewById(@PathVariable String reviewId) {
-        return reviewService.getReviewById(reviewId).orElse(null);
+        return reviewService.getReviewById(reviewId).orElseThrow(() -> new ReviewNotFoundException("Review with ID " + reviewId + "not found"));
     }
 
     // Видалити рецензію по ID

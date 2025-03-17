@@ -1,4 +1,4 @@
-package controller;
+package com.example.animereviewapi.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
