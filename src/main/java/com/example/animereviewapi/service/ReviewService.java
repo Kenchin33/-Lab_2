@@ -3,6 +3,7 @@ package com.example.animereviewapi.service;
 import com.example.animereviewapi.model.Review;
 import com.example.animereviewapi.model.Anime;
 import com.example.animereviewapi.model.User;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,16 @@ public class ReviewService {
     private List<Review> reviews = new ArrayList<>();
     private List<User> users = new ArrayList<>();
     private List<Anime> animes = new ArrayList<>();
+
+    // Отримати всі аніме
+    public List<Anime> getAllAnime() {
+        return animes;
+    }
+
+    // Отримати всіх користувачів
+    public List<User> getAllUsers() {
+        return users;
+    }
 
     // Додавання рецензії
     public Review addReview(Review review) {
