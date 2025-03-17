@@ -1,4 +1,4 @@
-package com.example.animereviewapi;
+package model;
 
 public class Anime {
     private String id;
