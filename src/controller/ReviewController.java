@@ -4,6 +4,7 @@ import model.Review;
 import service.ReviewService;
 
 import org.springframework.web.bind.annotation.*;
+import javax.validation.Valid;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class ReviewController {
 
     //Додати рецензію
     @PostMapping
-    public Review addReview(@RequestBody Review review) {
+    public Review addReview(@RequestBody @Valid Review review) {
         return reviewService.addReview(review);
     }
 
