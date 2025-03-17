@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class ReviewService {
     private List<Review> reviews = new ArrayList<>();
     private List<User> users = new ArrayList<>();
